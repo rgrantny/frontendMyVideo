@@ -8,9 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { VideosComponent } from './videos/videos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VideoFormComponent } from './video-form/video-form.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, VideosComponent],
+  declarations: [AppComponent, LoginComponent, VideosComponent, VideoFormComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
