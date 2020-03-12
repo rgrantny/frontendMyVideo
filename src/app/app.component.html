@@ -1,7 +1,8 @@
 <mat-toolbar color="primary">
     <h1>Video Repository</h1>
-    <button mat-button routerLink="/logout">Logout</button>
-    <button mat-button routerLink="/videos">Videos</button>
-    <button mat-button routerLink="/addVideo">Add Video</button>
+    <button [hidden]="!signedIn" mat-button (click)="logout()">Logout</button>
+    <button [hidden]="signedIn" mat-button routerLink="/logout">Login</button>
+    <button [hidden]="!signedIn" mat-button routerLink="/videos">Videos</button>
+    <button [hidden]="!signedIn" mat-button routerLink="/addVideo">Add Video</button>
 </mat-toolbar>
 <router-outlet></router-outlet>

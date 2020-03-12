@@ -9,7 +9,10 @@
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block"
-                (click)="add(description.value, link.value)">Add</button>
+                (click)="add(description.value, link.value);
+                description.value = '';
+                link.value = '';
+                ">Add</button>
         </div>
     </form>
 </div>
